@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.4, created on 2024-01-28 19:09:45
+/* Smarty version 4.3.4, created on 2024-01-28 19:50:31
   from 'C:\project\lotto\resources\views\smarty\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.4',
-  'unifunc' => 'content_65b6a679932fd9_16333582',
+  'unifunc' => 'content_65b6b007c97e26_85637333',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dd0153fdfc181920882c0da79cfd3cc7a03e6966' => 
     array (
       0 => 'C:\\project\\lotto\\resources\\views\\smarty\\templates\\index.tpl',
-      1 => 1706468982,
+      1 => 1706471426,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65b6a679932fd9_16333582 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65b6b007c97e26_85637333 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,7 +72,10 @@ function content_65b6a679932fd9_16333582 (Smarty_Internal_Template $_smarty_tpl)
                     $('.button-text').text('Spin');
                 },
                 error: function (error) {
-                    console.error('Error:', error);
+                    $('.fa-spinner').css({
+                        'display': 'none'
+                    })
+                    $('.button-text').text('Spin');
                 }
             });
         });

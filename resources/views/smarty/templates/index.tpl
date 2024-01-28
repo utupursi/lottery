@@ -46,7 +46,10 @@
                     $('.button-text').text('Spin');
                 },
                 error: function (error) {
-                    console.error('Error:', error);
+                    $('.fa-spinner').css({
+                        'display': 'none'
+                    })
+                    $('.button-text').text('Spin');
                 }
             });
         });

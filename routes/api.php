@@ -18,5 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('spin', [\App\Http\Controllers\Api\LotteryController::class, 'spin']);
+Route::post('spin', [\App\Http\Controllers\LotteryController::class, 'spin']);
 

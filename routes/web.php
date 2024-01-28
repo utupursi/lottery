@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\Api\LotteryController::class, 'index']);
+Route::get('/', [\App\Http\Controllers\LotteryController::class, 'index']);
 
 

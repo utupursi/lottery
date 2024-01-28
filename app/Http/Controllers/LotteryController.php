@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers;
 
 use App\Interfaces\Lottery\LotteryServiceInterface;
 use Illuminate\Routing\Controller as BaseController;
